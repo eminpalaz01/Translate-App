@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Example Çeviri</title>
+
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- Bootsrap cdn -->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+    
+
+    <div class="container mt-3"> 
+    <div>
+    <h1 class="mb-5"><span id="palaz">Example</span>Translate</h1>
+    <p id="text-for-testing">
+        Type the word or sentence you want to translate.
+    </p>
+    <select name="languages" id="languages" class="mb-3">
+        <option class ="select-items" value="tr">Turkish</option>
+        <option class ="select-items" value="en" selected>English</option>
+        <option class ="select-items" value="de">Deutsch</option>
+    </select>
+    <span class="m-3"> To </span>
+    <select name="translatingLanguages" id="translating-languages">
+        <option class ="select-items" value="tr">Turkish</option>
+        <option class ="select-items" value="en">English</option>
+        <option class ="select-items" value="de">Deutsch</option>
+    </select>
+    </div>
+    <div class="text-area-div">
+        <textarea name="willTranslating" id="will-translating-text" class="text-area-translate" cols="40" rows="8" placeholder="Write to here..."></textarea>
+        <textarea readonly name="translated" id="translated-text" class="text-area-translate" cols="40" rows="8"></textarea>
+    </div>
+
+    <div class="container">
+        <button id="click-to-me" type="button" class="btn btn-primary mt-3">Translate</button>
+    </div>
+
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script src="ui.js"></script>
+<script src="request.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
